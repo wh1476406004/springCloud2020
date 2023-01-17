@@ -1,7 +1,7 @@
 package com.wh.controller;
 
-import com.wh.entities.CommonResult;
-import com.wh.entities.Payment;
+import com.wh.springcloud.entities.CommonResult;
+import com.wh.springcloud.entities.Payment;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

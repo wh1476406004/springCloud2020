@@ -2,17 +2,17 @@ package com.wh.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * @description:
  * @author: GooGoo
- * @time: 2023/1/17 15:01
+ * @time: 2023/1/22 20:45
  */
 @SpringBootApplication
-@EnableEurekaClient
-public class OrderMain80 {
+@EnableDiscoveryClient
+public class OrderConsulMain80 {
     public static void main(String[] args) {
-        SpringApplication.run(OrderMain80.class,args);
+        SpringApplication.run(OrderConsulMain80.class, args);
     }
 }

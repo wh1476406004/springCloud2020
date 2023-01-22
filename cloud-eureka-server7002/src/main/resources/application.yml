@@ -1,5 +1,5 @@
 server:
-  port: 7001
+  port: 7002
 eureka:
   instance:
     hostname: eureka${server.port}.com
@@ -8,9 +8,9 @@ eureka:
     fetch-registry: false    # false表示自己就是注册中心，
     service-url:
       #设置与eureka server交互的地址 查询服务和注册服务都需要依赖这个地址*（单机）
-#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      #      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
       #集群，向另一个 eureka 注册中心注册自己
-      defaultZone: http://eureka7002.com:7002/eureka
+      defaultZone: http://eureka7001.com:7001/eureka
   server:
     #关闭自我保护机制，如果发现任何client不可用，就就立即删除
     enable-self-preservation: false
